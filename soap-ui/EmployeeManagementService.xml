@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="10db541e-3d96-4879-a4f2-cc858cc39ae2" activeEnvironment="Default" name="EmployeeManagementREST" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="5c425efb-e9c9-4bc4-852e-75b040ca6dda" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://216.10.245.166" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://216.10.245.166</con:endpoint></con:endpoints><con:resource name="Addbook.php" path="/Library/Addbook.php" id="df2d006c-ba48-4ecc-a444-cfae86b3ecd8"><con:settings/><con:parameters/><con:method name="Method 1" id="13940b32-f0fe-494b-98fe-0d5d238a4fd1" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:add="http://216.10.245.166/Library/Addbook.php">add:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:add="http://216.10.245.166/Library/Addbook.php">add:Fault</con:element></con:representation><con:request name="Request 1" id="50f72508-e4dc-42cd-985c-452f08dff852" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request>{
+"name":"Learn Appium Automation with Java",
+"isbn":"Sree",
+"aisle":"110",
+"author":"Lokesh"
+}</con:request><con:originalUri>http://216.10.245.166/Library/Addbook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetBook.php" path="/Library/GetBook.php" id="02d33270-672c-4ada-9b42-46d7de20e585"><con:settings/><con:parameters><con:parameter><con:name>AuthorName</con:name><con:value>Lokesh</con:value><con:style>QUERY</con:style><con:default>Lokesh</con:default></con:parameter></con:parameters><con:method name="Method 1" id="46a9b137-66b7-49fb-b489-75164ea51e68" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="320a1014-219d-40ab-b912-4832115d605d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request/><con:originalUri>http://216.10.245.166/Library/GetBook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="GetBook.php" path="/Library/GetBook.php" id="33c2f742-7463-4b55-8bcc-1d5865ccf5cd"><con:settings/><con:parameters><con:parameter><con:name>ID</con:name><con:value>3389</con:value><con:style>QUERY</con:style><con:default>3389</con:default></con:parameter></con:parameters><con:method name="Method 1" id="8cd2c516-07d9-4630-932e-0524c22cc0a0" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:get="http://216.10.245.166/Library/GetBook.php">get:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" id="8f6f4b4b-1e93-4b69-bf8b-419fc150ef39" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request/><con:originalUri>http://216.10.245.166/Library/GetBook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="Sree110" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:request></con:method></con:resource><con:resource name="DeleteBook.php" path="/Library/DeleteBook.php" id="35e23cd1-7b00-4d0d-8a9b-ad8c34862ebd"><con:settings/><con:parameters/><con:method name="Method 1" id="64b06574-ff0a-4bc2-8279-648a5d0c799e" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" id="d1b9cc8e-7b76-471d-82d0-47ba8e2f58b4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request>{
+"ID" : "Sree110"
+} </con:request><con:originalUri>http://216.10.245.166/Library/DeleteBook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="87b1f27c-c54d-4196-98e9-2f7b2e369bd7" name="GroovyBasics"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="28b0d6ed-514e-4282-acbb-85a628393e61" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Groovy_TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Variables" id="93130728-6b75-4780-bc5a-24daa7c86240"><con:settings/><con:config><script>// variable declaration
+def name
+String firstName,lastName,country
+int age
+double salary
+
+firstName = 'Lokesh'
+lastName = 'Kondepudi'
+age = 43
+salary = 4232
+country = 'India'
+
+log.info 'Name-'+ firstName + "--" + lastName 
+log.warn 'Age-'+age
+log.error 'Salary-'+salary
+log.info "Country is -  $country"</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Conditions" id="cbd5c287-55e2-4633-8e2d-ad05ac47a0b6"><con:settings/><con:config><script>boolean isPassed
+
+isPassed = true
+//isPassed = false
+
+if (isPassed==true){
+	log.info 'I got Bike!'
+}else{
+	log.info "I didn't get Bike!"
+}
+
+String grade ='C'
+
+if(grade=='A'){
+	log.info('Got a car')
+}else if(grade=='B'){
+	log.info('Got a bike')
+}else{
+	log.error('Nothing!')
+}</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Lists" id="cce30a51-004d-4ad4-a6da-b876e23db4e6"><con:settings/><con:config><script>
+// declaring List of values
+def books = ['Selenium','CoreJava','Oracle']
+
+log.info "Books are $books"
+
+books.each{
+	bookName ->
+	log.info "Name is $bookName"
+	boolean res = bookName.contains('CSHarp')
+	if(res == true){
+		log.info "yes $res "+ "book aviable"
+	}else
+		log.info "No such book is avilable"
+}
+
+// to add values into list
+books.add('SAP')
+books &lt;&lt; 'CSHarp'
+log.info "Books are $books"
+
+//to remove values form list
+books.remove('CSHarp')
+log.info "Books are $books"</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Map" id="e25340d1-0515-46b6-857c-47d41ddf7bee"><con:settings/><con:config><script>def capitalsOfIndia =['Bangalore':'Karnataka','Amaravathi':'AndhraPradesh','Chennai':'TamilNadu']
+
+log.info capitalsOfIndia
+log.info capitalsOfIndia.values()
+
+for (keys in capitalsOfIndia){
+	log.info(keys) 
+}
+
+capitalsOfIndia.put('Trivandrum','Kerala')
+log.info capitalsOfIndia</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Assertions" id="ac774df5-7a30-4d9b-8fb5-3c40bdd222fc"><con:settings/><con:config><script>String expName, actName
+
+expName ='SithaRama'
+actName = 'SithaRama'
+
+log.info 'before assertion'
+assert expName == actName
+log.info 'after assertion'
+
+int a=10,b=10,c
+c=a+b
+
+assert a==b</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Reading Artifacts" id="14b8dfcc-7888-4d9d-b773-683ffbe98629"><con:settings/><con:config><script>//to get testcase name
+log.info testRunner.testCase.name
+
+//to get testsuite name
+log.info testRunner.testCase.testSuite.name
+
+//to get project name
+log.info testRunner.testCase.testSuite.project.name
+
+//to get workspace name
+log.info testRunner.testCase.testSuite.project.workspace.name
+
+// to read other tets suite
+log.error testRunner.testCase.testSuite.project.getTestSuiteByName('EmpManagementTestSuite').getTestCaseByName('Addbook.php TestCase').name
+
+def testsuites = testRunner.testCase.testSuite.project.testSuites
+
+for(suits in testsuites){
+	log.info suits
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script-ReadData from txt file" id="b8802453-a8a3-4455-85c8-c4484fbdf519"><con:settings/><con:config><script>def filePath ='C:\\Users\\lokesh.kondepudi\\Documents\\Lokesh\\soap-ui\\data.txt'
+File file = new File(filePath)
+
+file.eachLine{
+	line->
+	log.info line
+
+	def lineData = line.split(' ')
+	log.info lineData
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script-ReadData from Excel file" id="506b6256-f249-454e-82b6-7aa110298189"><con:settings/><con:config><script>import jxl.*
+import jxl.write.*
+
+def excelFilePath = "C:\\Users\\lokesh.kondepudi\\Documents\\Lokesh\\soap-ui\\pets.xls"
+File excelFile = new File(excelFilePath)
+
+Workbook wb = Workbook.getWorkbook(new File(excelFilePath))
+Sheet sh = wb.getSheet(0)
+  
+int noOfRows = sh.getRows()-1
+log.info "noOfRows - $noOfRows"
+def petId, petName
+
+/*
+for(int rowIdx in 1..noOfRows){
+	log.warn '------------------------------------------'
+	petId = sh.getCell(0,rowIdx).getContents()
+	petName = sh.getCell(1,rowIdx).getContents()
+	log.info  "petID-$petId, petName = $petName"
+	testRunner.testCase.setPropertyValue('pet_id',petId)
+	testRunner.testCase.setPropertyValue('pet_name',petName)
+	testRunner.testCase.getTestStepByName('addPet').run(testRunner,context)
+} */
+wb.close()</script></con:config></con:testStep><con:properties><con:property><con:name>pet_id</con:name><con:value>200</con:value></con:property><con:property><con:name>pet_name</con:name><con:value>snkes</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:testSuite id="0c5511dd-8a37-46fa-a56e-3f093e2950a8" name="EmpManagementTestSuite"><con:description>TestSuite generated for REST Service [http://216.10.245.166]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="7f3df68d-0d2e-485e-9d4f-3ddde0091a90" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Addbook.php TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Addbook.php] located at [/Library/Addbook.php]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="de3277e0-7db8-4f1a-b9af-3c849d811028"><con:settings/><con:config service="http://216.10.245.166" resourcePath="/Library/Addbook.php" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="50f72508-e4dc-42cd-985c-452f08dff852" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request>{
+"name":"Learn Appium Automation with Java",
+"isbn":"Sree",
+"aisle":"110",
+"author":"Lokesh"
+}</con:request><con:originalUri>http://216.10.245.166/Library/Addbook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script-calling teststep" id="15d454a9-25bb-4a14-9e64-4c77b8be563c"><con:settings/><con:config><script/></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="3358fb09-9b49-449a-8ee3-59d67ff2a21c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetBook.php TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [GetBook.php] located at [/Library/GetBook.php]</con:description><con:settings/><con:testStep type="restrequest" name="getBookDetails" id="dafe7a89-2c68-4094-a16b-38148f51ada4"><con:settings/><con:config service="http://216.10.245.166" resourcePath="/Library/GetBook.php" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="getBookDetails" id="320a1014-219d-40ab-b912-4832115d605d" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request/><con:originalUri>http://216.10.245.166/Library/GetBook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script-calling teststep" id="f791214a-7455-46e9-a64b-d8e3b1498f07"><con:settings/><con:config><script>
+import groovy.json.JsonSlurper
+
+
+// creating the instance of JsonSlurper
+def jsonSlurper= new JsonSlurper()
+
+def response = context.expand('${getBookDetails#Response}')
+def jsonRes =  jsonSlurper.parseText(response)
+log.info jsonRes.isbn
+log.info jsonRes[2].isbn</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5e9b8356-ca80-449a-bed0-a930cdc90933" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetBook.php TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [GetBook.php] located at [/Library/GetBook.php]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="97837278-c012-43e3-bc54-408c14be6e10"><con:settings/><con:config service="http://216.10.245.166" resourcePath="/Library/GetBook.php" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="8f6f4b4b-1e93-4b69-bf8b-419fc150ef39" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request/><con:originalUri>http://216.10.245.166/Library/GetBook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ID" value="Sree110" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="0eb24081-48a5-4236-b894-67038714f915" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DeleteBook.php TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [DeleteBook.php] located at [/Library/DeleteBook.php]</con:description><con:settings/><con:testStep type="restrequest" name="Request 1" id="99510c16-9633-4947-9ed7-15b0fce8056d"><con:settings/><con:config service="http://216.10.245.166" resourcePath="/Library/DeleteBook.php" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="d1b9cc8e-7b76-471d-82d0-47ba8e2f58b4" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://216.10.245.166</con:endpoint><con:request>{
+"ID" : "Sree110"
+} </con:request><con:originalUri>http://216.10.245.166/Library/DeleteBook.php</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

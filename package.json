@@ -1,0 +1,20 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome"
+  },
+  "author": "Lokesh Kondepudi",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.7.0",
+    "cypress-multi-reporters": "^1.2.3",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.23.1",
+    "mochawesome": "^4.1.0"
+  }
+}

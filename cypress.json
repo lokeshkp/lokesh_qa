@@ -1,0 +1,18 @@
+{
+    "defaultCommandTimeout": 8000,
+    "pageLoadTimeout": 100000,
+    "env":{
+        "qaUrl": "http://automationpractice.com/",
+        "prodUrl" : "https://rahulshettyacademy.com/",
+        "preUat": "http://www.qaclickacademy.com/"
+    },
+    
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      }
+
+}

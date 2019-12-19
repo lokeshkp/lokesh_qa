@@ -1,0 +1,9 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:typ="http://sample.com/reservation/guest/types">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:deleteEmployee>
+         <!--Optional:-->
+         <typ:employeeName>dileep</typ:employeeName>
+      </typ:deleteEmployee>
+   </soapenv:Body>
+</soapenv:Envelope>
